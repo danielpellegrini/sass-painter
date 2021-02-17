@@ -1,6 +1,12 @@
 @import "utilities";
 @import "var";
 
+@mixin background-img {
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .main-nav {
   background: #101010;
   color: inherit;
@@ -20,16 +26,25 @@
       }
     }
   }
-
+  // end top-nav-container
   .bottom-nav-container{
     width: 1200px;
     padding: 20px 50px;
 
-
     & div {
-      margin: 0 50px 10px 0;
+      margin: 20px 50px 0 0;
       align-self: flex-end;
     }
   }
   // end bottom-nav-container
+}
+
+.main-container {
+  width: 100%;
+  height: 1080px;
+
+  .background-image {
+    background-image: url($bg-image);
+    @include background-img;
+  }
 }
