@@ -1,0 +1,35 @@
+@import "utilities";
+@import "var";
+
+.main-nav {
+  background: #101010;
+  color: inherit;
+  justify-content: center;
+  color: $text-color;
+
+  .top-nav-container {
+    position: absolute;
+    right: 250px;
+
+    & div {
+      margin: 0 20px 10px 0;
+
+      a {
+        color: $text-color;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .bottom-nav-container{
+    width: 1200px;
+    padding: 20px 50px;
+
+
+    & div {
+      margin: 0 50px 10px 0;
+      align-self: flex-end;
+    }
+  }
+  // end bottom-nav-container
+}
